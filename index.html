@@ -10,7 +10,7 @@
   </head> 
 <body>
 
-<div class="row">
+<div class="panel">
   <div class="small-12 large-centered"><h1>Dang, isn't it usually warmer this time of year?!</h1></div>
   <div id="response" class="small-12 large-centered"></div>
   <div id="current" class="small-12 large-centered"></div>
@@ -52,8 +52,8 @@ var tempResponse = function() {
 document.getElementById("response").innerHTML = tempResponse();
 
 
-document.getElementById("current").innerHTML = "Today's temperature is " + currentTemp + " deg F.";
-document.getElementById("historical").innerHTML = "The historical high temperature for today is " + historicalTempHi + " deg F. " + "The historical low temperature for today is " + historicalTempLo + " deg F.";
+document.getElementById("current").innerHTML = "Today's temperature is " + currentTemp + " &degF.";
+document.getElementById("historical").innerHTML = "The historical high temperature for today is " + historicalTempHi + " &degF. " + "and the historical low temperature for today is " + historicalTempLo + " &degF.";
 
 </script>
 
